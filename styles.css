@@ -1,0 +1,66 @@
+.fundo{
+  background-image: url(/inicio.jpg);
+
+}
+
+.principal {
+width: 80%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 100px 450px 150px;
+grid-template-areas: "cabecalho cabecalho"
+                     "secao barra-lateral"
+                     "rodape rodape";
+
+}
+
+.form{
+	width: 70%;
+    margin: 0 auto;
+	background-color: #fff;
+}
+
+ body, p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  font-style:italic;
+  color: rgb(80,78,78);
+  text-align: center;
+
+ }
+
+ header {
+         grid-area: cabecalho;
+         background-color: rgb(186, 141, 229);}
+
+ section {grid-area: secao;
+          /*background-color: rgb(161, 182, 182);*/}
+          
+  aside {grid-area: barra-lateral;
+    background-color: rgb(128, 255, 255);
+    height: 600px;
+    
+    }
+    
+    footer {grid-area: rodape;
+      display: flex;
+      justify-content: space-evenly;}
+       .parte1, .parte2, .parte3 {
+         width: 25%;
+         background-color: beige;}
+        
+         .parte2 {width: 50%;margin: 0 2px;} 
+         .parte3 {margin: 0;}
+
+/*
+ .logo{
+  img: url(/logo.jpg);	
+  width: 50px;
+  height: 30px;
+  
+
+}
+
+*/
